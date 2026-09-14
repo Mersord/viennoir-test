@@ -62,32 +62,19 @@
 <div class="mobile-menu__language"><p class="caption">Language</p><nav aria-label="Choose language" class="language-switcher language-switcher--mobile"><a data-language-link="de" href="../index.html" hreflang="de" lang="de">DE</a><span aria-hidden="true">/</span><a aria-current="page" data-language-link="en" href="index.html" hreflang="en" lang="en">EN</a></nav></div></div>
 </div>
 <main id="main">
-<section aria-label="Vien.noir productions" class="home-hero" data-hero="">
-<div aria-hidden="true" class="home-hero__slides">
-<div class="home-hero__slide home-hero__slide--bond is-active" data-hero-slide=""></div>
-<div aria-hidden="true" class="home-hero__slide home-hero__slide--desire" data-hero-slide=""></div>
-<div aria-hidden="true" class="home-hero__slide home-hero__slide--santa" data-hero-slide=""></div>
+<section aria-label="Vien.noir" class="home-hero">
+<div aria-hidden="true" class="home-hero__video">
+<video autoplay="" data-background-video="" disablepictureinpicture="" loop="" muted="" playsinline="" webkit-playsinline="" poster="../assets/media/VienNoirSmoke-poster.webp" preload="auto">
+<source src="../assets/media/VienNoirSmoke.mp4" type="video/mp4"/>
+</video>
 </div>
 <div class="home-hero__ghost">VIEN.NOIR</div>
-<div class="shell home-hero__content">
-<p class="kicker kicker--plain">Vienna · Live entertainment</p>
-<h1 class="home-hero__title">Vienna’s most <em>elegant</em> &amp; thrilling experience.</h1>
-<p class="home-hero__copy">Live music. Aerial acrobatics. Exquisite dance and burlesque. Welcome to a world where the ordinary becomes spectacular.</p>
-<div class="button-row home-hero__actions">
-<a class="button button--gold" href="programme.html">Discover the season</a>
-<a class="button" href="#viennoir">What is Vien.noir?</a>
-</div>
-</div>
-<div class="home-hero__bottom">
-<div aria-label="Select background image" class="hero-dots">
-<button aria-label="Ladies of Bond" class="hero-dot is-active" data-hero-dot="" type="button"></button>
-<button aria-label="Season of Desire" class="hero-dot" data-hero-dot="" type="button"></button>
-<button aria-label="Santa Baby" class="hero-dot" data-hero-dot="" type="button"></button>
-</div>
+<div class="home-hero__bottom home-hero__bottom--single">
 <span class="scroll-cue">Explore</span>
 </div>
 </section>
-<section class="section intro-section" id="viennoir">
+<div aria-hidden="true" class="home-hero-transition"></div>
+<section class="section intro-section intro-section--smoke-fade" id="viennoir">
 <div class="shell intro-grid">
 <div data-reveal="left">
 <div class="intro-word">
@@ -118,7 +105,7 @@
 </div>
 <div class="world-stage">
 <div aria-hidden="true" class="world-stage__ring"></div>
-<img alt="Placeholder for an atmospheric Vien.noir stage photograph" class="world-stage__image" height="1500" loading="lazy" src="../assets/img/placeholder-stage.svg" width="1200"/>
+<img alt="Vien.noir logo" class="world-stage__image world-stage__image--logo" height="1500" loading="lazy" src="../assets/img/VienNoir/ViennoirLogo-white-TRANSPARENT.png" width="1500"/>
 <article class="world-item world-item--1" data-reveal=""><span class="world-item__number">01</span><h3>The music</h3><p>Powerful voices, live arrangements and music that carries every scene.</p></article>
 <article class="world-item world-item--2" data-reveal=""><span class="world-item__number">02</span><h3>The acts</h3><p>Aerial acrobatics, burlesque and dance – virtuosic, elegant and immediate.</p></article>
 <article class="world-item world-item--3" data-reveal=""><span class="world-item__number">03</span><h3>The otherworld</h3><p>A world beyond everyday life, designed down to the finest detail.</p></article>
@@ -135,7 +122,10 @@
 </header>
 <article class="show-feature" data-reveal="" data-tilt="">
 <a aria-label="View Ladies of Bond" class="show-feature__art" href="ladies-of-bond-vienna.html">
-<img alt="Ladies of Bond – aerial artist in a hoop against golden smoke" height="900" loading="lazy" src="../assets/img/bond-wide.webp" width="1600"/>
+<picture class="show-feature__media">
+<source media="(max-width: 900px)" srcset="../assets/img/bond-wide.webp"/>
+<img alt="Ladies of Bond – aerial artist in a hoop against golden smoke" height="1274" loading="lazy" src="../assets/img/bond-poster.webp" width="900"/>
+</picture>
 <span class="show-feature__index">01</span>
 </a>
 <div class="show-feature__body">
@@ -149,7 +139,10 @@
 </article>
 <article class="show-feature show-feature--desire" data-reveal="" data-tilt="">
 <a aria-label="View Season of Desire" class="show-feature__art" href="season-of-desire-vienna.html">
-<img alt="Season of Desire – two performers in elegant Regency costumes" height="900" loading="lazy" src="../assets/img/desire-wide.webp" width="1600"/>
+<picture class="show-feature__media">
+<source media="(max-width: 900px)" srcset="../assets/img/desire-wide.webp"/>
+<img alt="Season of Desire – two performers in elegant Regency costumes" height="1274" loading="lazy" src="../assets/img/desire-poster.webp" width="900"/>
+</picture>
 <span class="show-feature__index">02</span>
 </a>
 <div class="show-feature__body">
@@ -163,7 +156,10 @@
 </article>
 <article class="show-feature show-feature--santa" data-reveal="" data-tilt="">
 <a aria-label="View Santa Baby" class="show-feature__art" href="santa-baby-dinner-show.html">
-<img alt="Santa Baby – Santa Claus in an opulent red setting" height="900" loading="lazy" src="../assets/img/santa-wide.webp" width="1600"/>
+<picture class="show-feature__media">
+<source media="(max-width: 900px)" srcset="../assets/img/santa-wide.webp"/>
+<img alt="Santa Baby – Santa Claus in an opulent red setting" height="1273" loading="lazy" src="../assets/img/santa-poster.webp" width="900"/>
+</picture>
 <span class="show-feature__index">03</span>
 </a>
 <div class="show-feature__body">
@@ -188,8 +184,8 @@
 <section class="section services-teaser">
 <div class="shell services-teaser__grid">
 <div class="services-teaser__art" data-reveal="left">
-<img alt="Placeholder for an elegant corporate event with Vien.noir artists" height="1500" loading="lazy" src="../assets/img/placeholder-event.svg" width="1200"/>
-<img alt="Aerial acrobatics as an event highlight" height="1000" loading="lazy" src="../assets/img/bond-square.webp" width="1000"/>
+<img alt="Elegant corporate event with Vien.noir artists" height="1500" loading="lazy" src="../assets/img/LadiesOfBond/Lilian-Blue2.jpg" width="1200"/>
+<img alt="Aerial acrobatics as an event highlight" height="1000" loading="lazy" src="../assets/img/LadiesOfBond/Doro.jpg" width="1000"/>
 </div>
 <div class="services-teaser__copy" data-reveal="right">
 <p class="kicker">Vien.noir Event-Services</p>
