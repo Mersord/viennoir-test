@@ -79,6 +79,42 @@
     }
   }
 
+  // Background videos must remain muted so browsers allow autoplay.
+  // Calling play() explicitly also restarts them after tab changes, page restore,
+  // or browsers that do not immediately honour the autoplay attribute.
+  document.querySelectorAll('[data-background-video]').forEach((video) => {
+    video.muted = true;
+    video.defaultMuted = true;
+    video.autoplay = true;
+    video.loop = true;
+    video.playsInline = true;
+
+    const startBackgroundVideo = () => {
+      if (!video.paused) return;
+      const playPromise = video.play();
+      if (playPromise && typeof playPromise.catch === 'function') {
+        // Some browsers postpone autoplay until the first user interaction.
+        playPromise.catch(() => {});
+      }
+    };
+
+    if (video.readyState >= 2) {
+      startBackgroundVideo();
+    } else {
+      video.addEventListener('canplay', startBackgroundVideo, { once: true });
+      video.addEventListener('loadeddata', startBackgroundVideo, { once: true });
+    }
+
+    window.addEventListener('pageshow', startBackgroundVideo);
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) startBackgroundVideo();
+    });
+
+    ['pointerdown', 'touchstart', 'keydown'].forEach((eventName) => {
+      document.addEventListener(eventName, startBackgroundVideo, { once: true, passive: true });
+    });
+  });
+
   document.querySelectorAll('[data-hero]').forEach((hero) => {
     const slides = [...hero.querySelectorAll('[data-hero-slide]')];
     const dots = [...hero.querySelectorAll('[data-hero-dot]')];
