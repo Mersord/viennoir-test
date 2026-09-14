@@ -1,0 +1,16 @@
+# Alte Wix-Adressen auf die neuen Seiten. Format: Cloudflare Pages / Netlify.
+/blank-1-1            /season-of-desire-vienna   301
+/about                /ueber-uns                 301
+/solutions            /event-services            301
+/contact              /kontakt                   301
+/privacy-policy       /datenschutz               301
+
+# Saubere Adressen ohne .html
+/programm                  /programm.html                  200
+/ladies-of-bond-vienna     /ladies-of-bond-vienna.html     200
+/season-of-desire-vienna   /season-of-desire-vienna.html   200
+/santa-baby-dinner-show    /santa-baby-dinner-show.html    200
+/ueber-uns                 /ueber-uns.html                 200
+/event-services            /event-services.html            200
+/kontakt                   /kontakt.html                   200
+/datenschutz               /datenschutz.html               200
