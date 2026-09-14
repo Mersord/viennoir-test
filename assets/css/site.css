@@ -325,6 +325,29 @@ body.menu-open .site-header {
   gap: clamp(14px, 2vw, 34px);
 }
 
+/* Subtle division between general site pages and current productions. */
+.main-nav > a:nth-of-type(4) {
+  margin-left: clamp(5px, 0.65vw, 11px);
+}
+
+.main-nav > a:nth-of-type(4)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: clamp(-21px, -1.35vw, -13px);
+  width: 1px;
+  height: 15px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(226, 190, 119, 0.38) 28%,
+    rgba(226, 190, 119, 0.38) 72%,
+    transparent
+  );
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
 .main-nav a,
 .header-action {
   position: relative;
