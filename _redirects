@@ -14,3 +14,13 @@
 /event-services            /event-services.html            200
 /kontakt                   /kontakt.html                   200
 /datenschutz               /datenschutz.html               200
+
+# Englische Adressen ohne .html
+/en/programme                  /en/programme.html                  200
+/en/ladies-of-bond-vienna      /en/ladies-of-bond-vienna.html     200
+/en/season-of-desire-vienna    /en/season-of-desire-vienna.html   200
+/en/santa-baby-dinner-show     /en/santa-baby-dinner-show.html    200
+/en/about                      /en/about.html                      200
+/en/event-services             /en/event-services.html             200
+/en/contact                    /en/contact.html                    200
+/en/privacy                    /en/privacy.html                    200

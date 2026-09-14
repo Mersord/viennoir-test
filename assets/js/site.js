@@ -5,6 +5,23 @@
   root.classList.add('js');
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const language = (document.documentElement.lang || 'de').toLowerCase();
+  const isEnglish = language.startsWith('en');
+  const uiText = isEnglish ? {
+    menuOpen: 'Open menu',
+    menuClose: 'Close menu',
+    formSubject: 'Enquiry via viennoir.com',
+    notProvided: 'not provided',
+    newsletterSubject: 'Newsletter sign-up',
+    newsletterBody: 'Please add the following address to the Vien.noir newsletter:'
+  } : {
+    menuOpen: 'Menü öffnen',
+    menuClose: 'Menü schließen',
+    formSubject: 'Anfrage über viennoir.com',
+    notProvided: 'nicht angegeben',
+    newsletterSubject: 'Newsletter-Anmeldung',
+    newsletterBody: 'Bitte nehmen Sie folgende Adresse in den Vien.noir Newsletter auf:'
+  };
   const header = document.querySelector('[data-header]');
   const menuToggle = document.querySelector('[data-menu-toggle]');
   const mobileMenu = document.querySelector('[data-mobile-menu]');
@@ -20,6 +37,7 @@
   const setMenu = (open) => {
     if (!menuToggle || !mobileMenu) return;
     menuToggle.setAttribute('aria-expanded', String(open));
+    menuToggle.setAttribute('aria-label', open ? uiText.menuClose : uiText.menuOpen);
     mobileMenu.setAttribute('aria-hidden', String(!open));
     document.body.classList.toggle('menu-open', open);
   };
@@ -115,14 +133,14 @@
       const recipient = form.dataset.recipient || 'office@viennoir.com';
       const name = String(data.get('name') || '').trim();
       const email = String(data.get('email') || '').trim();
-      const subject = String(data.get('subject') || 'Anfrage über viennoir.com').trim();
+      const subject = String(data.get('subject') || uiText.formSubject).trim();
       const message = String(data.get('message') || '').trim();
       const body = [
         message,
         '',
         '—',
-        `Name: ${name || 'nicht angegeben'}`,
-        `E-Mail: ${email || 'nicht angegeben'}`
+        `Name: ${name || uiText.notProvided}`,
+        `${isEnglish ? 'Email' : 'E-Mail'}: ${email || uiText.notProvided}`
       ].join('\n');
       window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
@@ -132,8 +150,8 @@
     form.addEventListener('submit', (event) => {
       event.preventDefault();
       const email = String(new FormData(form).get('email') || '').trim();
-      const subject = 'Newsletter-Anmeldung';
-      const body = `Bitte nehmen Sie folgende Adresse in den Vien.noir Newsletter auf:\n\n${email}`;
+      const subject = uiText.newsletterSubject;
+      const body = `${uiText.newsletterBody}\n\n${email}`;
       window.location.href = `mailto:office@viennoir.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   });

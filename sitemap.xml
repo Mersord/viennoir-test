@@ -1,11 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.viennoir.com/</loc><priority>1.0</priority></url>
-  <url><loc>https://www.viennoir.com/programm</loc><priority>0.9</priority></url>
-  <url><loc>https://www.viennoir.com/ladies-of-bond-vienna</loc><priority>0.9</priority></url>
-  <url><loc>https://www.viennoir.com/season-of-desire-vienna</loc><priority>0.9</priority></url>
-  <url><loc>https://www.viennoir.com/santa-baby-dinner-show</loc><priority>0.9</priority></url>
-  <url><loc>https://www.viennoir.com/event-services</loc><priority>0.7</priority></url>
-  <url><loc>https://www.viennoir.com/ueber-uns</loc><priority>0.6</priority></url>
-  <url><loc>https://www.viennoir.com/kontakt</loc><priority>0.6</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.viennoir.com/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.viennoir.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.viennoir.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.viennoir.com/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.viennoir.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.viennoir.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.viennoir.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.viennoir.com/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.viennoir.com/programm</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.viennoir.com/programm"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.viennoir.com/en/programme"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.viennoir.com/programm"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.viennoir.com/en/programme</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.viennoir.com/programm"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.viennoir.com/en/programme"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.viennoir.com/programm"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.viennoir.com/ladies-of-bond-vienna</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.viennoir.com/ladies-of-bond-vienna"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.viennoir.com/en/ladies-of-bond-vienna"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.viennoir.com/ladies-of-bond-vienna"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.viennoir.com/en/ladies-of-bond-vienna</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.viennoir.com/ladies-of-bond-vienna"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.viennoir.com/en/ladies-of-bond-vienna"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.viennoir.com/ladies-of-bond-vienna"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.viennoir.com/season-of-desire-vienna</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.viennoir.com/season-of-desire-vienna"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.viennoir.com/en/season-of-desire-vienna"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.viennoir.com/season-of-desire-vienna"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.viennoir.com/en/season-of-desire-vienna</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.viennoir.com/season-of-desire-vienna"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.viennoir.com/en/season-of-desire-vienna"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.viennoir.com/season-of-desire-vienna"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.viennoir.com/santa-baby-dinner-show</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.viennoir.com/santa-baby-dinner-show"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.viennoir.com/en/santa-baby-dinner-show"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.viennoir.com/santa-baby-dinner-show"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.viennoir.com/en/santa-baby-dinner-show</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.viennoir.com/santa-baby-dinner-show"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.viennoir.com/en/santa-baby-dinner-show"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.viennoir.com/santa-baby-dinner-show"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.viennoir.com/event-services</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.viennoir.com/event-services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.viennoir.com/en/event-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.viennoir.com/event-services"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.viennoir.com/en/event-services</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.viennoir.com/event-services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.viennoir.com/en/event-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.viennoir.com/event-services"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.viennoir.com/ueber-uns</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.viennoir.com/ueber-uns"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.viennoir.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.viennoir.com/ueber-uns"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.viennoir.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.viennoir.com/ueber-uns"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.viennoir.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.viennoir.com/ueber-uns"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.viennoir.com/kontakt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.viennoir.com/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.viennoir.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.viennoir.com/kontakt"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.viennoir.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.viennoir.com/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.viennoir.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.viennoir.com/kontakt"/>
+    <priority>0.6</priority>
+  </url>
 </urlset>
