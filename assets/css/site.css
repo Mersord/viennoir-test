@@ -815,7 +815,8 @@ body.menu-open .mobile-menu { opacity: 1; visibility: visible; transform: transl
 .world-item--2 { top: 6%; right: 0; text-align: right; }
 .world-item--3 { top: 43%; left: 0; }
 .world-item--4 { top: 47%; right: 0; text-align: right; }
-.world-item--5 { right: 14%; bottom: 0; text-align: right; }
+.world-item--5 { bottom: 0; left: 14%; }
+.world-item--6 { right: 14%; bottom: 0; text-align: right; }
 
 /* Season --------------------------------------------------- */
 .season-section {
