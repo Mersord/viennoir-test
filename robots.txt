@@ -1,4 +1,5 @@
+# Vien.noir - static website
 User-agent: *
-Allow: /
+Disallow:
 
 Sitemap: https://www.viennoir.com/sitemap.xml
